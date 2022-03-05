@@ -1,6 +1,6 @@
-import logo from './resources/white-motto.png';
+import logo from './resources/logo.png';
 import './App.css';
-import { Paper, Grid, Stack} from '@mui/material';
+import { Paper, Stack} from '@mui/material';
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
       <Stack>
         <Paper elevation={2}
           style={{
-            width: '400px',
+            width: '300px',
             backgroundColor: '#BA0F30',
             textAlign: 'center',
             padding: '16px',
@@ -16,14 +16,9 @@ function App() {
             boxSizing: 'content-box'
           }}
         >
-          <img src={logo} alt="Logo" width={400} />
+          <img src={logo} alt="Logo" width={300} style={{ maxInlineSize: '100%' }}/>
         </Paper>
       </Stack>
-      <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
-        <Grid item xs={2} sm={4} md={4}>
-
-        </Grid>
-      </Grid>
     </>
   );
 }
