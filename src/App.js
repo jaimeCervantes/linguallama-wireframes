@@ -24,7 +24,7 @@ function App() {
 
       <div style={{marginTop: '16px', marginBottom: '16px', height: '1px'}}></div>
       
-      <Masonry columns={{ xs: 1, sm: 2, md: 3, lg: 4 }} spacing={2}>
+      <Masonry columns={{ xs: 1, sm: 2, md: 3, lg: 3 }} spacing={2}>
         <Card>
           <CardMedia
             component="img"
