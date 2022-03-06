@@ -1,24 +1,97 @@
-import logo from './resources/logo.png';
+import logo from './resources/red-logo_500.png';
 import './App.css';
-import { Paper, Stack} from '@mui/material';
+import { Stack, Card, CardMedia, Box, CardContent, Typography } from '@mui/material';
+import Masonry from '@mui/lab/Masonry';
+
+import cartagena from './resources/masonryImages/cartagena.jpg';
+import zoomMeetingColor from './resources/masonryImages/zoom-meeting-color.jpg';
+import plazaBolivar from './resources/masonryImages/plaza-bolivar-bogota.jpg';
+import trajineraMexico from './resources/masonryImages/trajinera-mexico.jpg';
+import zoomMeeting from './resources/masonryImages/zoom-meeting.jpg';
+import llama from './resources/masonryImages/llama.jpg';
 
 function App() {
   return (
     <>
       <Stack>
-        <Paper elevation={2}
+        <img src={logo} alt="Logo"
           style={{
-            width: '300px',
-            backgroundColor: '#BA0F30',
-            textAlign: 'center',
-            padding: '16px',
-            alignSelf: 'center',
-            boxSizing: 'content-box'
-          }}
-        >
-          <img src={logo} alt="Logo" width={300} style={{ maxInlineSize: '100%' }}/>
-        </Paper>
+            display: 'block',
+            maxInlineSize: '100%',
+            alignSelf: 'center'
+          }}/>
       </Stack>
+
+      <div style={{marginTop: '16px', marginBottom: '16px', height: '1px'}}></div>
+      
+      <Masonry columns={3} spacing={4}>
+        <Card>
+          <CardMedia
+            component="img"
+            image={cartagena}
+          />
+          <CardContent>
+            <Typography>
+              Cartagena
+            </Typography>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardMedia
+            component="img"
+            image={llama}
+          />
+          <CardContent>
+            <Typography>
+              Llama
+            </Typography>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardMedia
+            component="img"
+            image={plazaBolivar}
+          />
+          <CardContent>
+            <Typography>
+              Plaza Bolivar, Bogota
+            </Typography>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardMedia
+            component="img"
+            image={trajineraMexico}
+          />
+          <CardContent>
+            <Typography>
+              Mexican Trajinera
+            </Typography>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardMedia
+            component="img"
+            image={zoomMeeting}
+          />
+          <CardContent>
+            <Typography>
+              Zoom Meeting [fecha]
+            </Typography>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardMedia
+            component="img"
+            image={zoomMeetingColor}
+          />
+          <CardContent>
+            <Typography>
+              Zoom Meeting [fecha]
+            </Typography>
+          </CardContent>
+        </Card>
+      </Masonry>
     </>
   );
 }
