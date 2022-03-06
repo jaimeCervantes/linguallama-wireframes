@@ -1,6 +1,6 @@
 import logo from './resources/red-logo_500.png';
 import './App.css';
-import { Stack, Card, CardMedia, Box, CardContent, Typography } from '@mui/material';
+import { Stack, Card, CardMedia, CardContent, Typography } from '@mui/material';
 import Masonry from '@mui/lab/Masonry';
 
 import cartagena from './resources/masonryImages/cartagena.jpg';
