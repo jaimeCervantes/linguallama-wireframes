@@ -1,6 +1,7 @@
 import logo from './resources/red-logo_500.png';
 import './App.css';
 import { Stack, Card, CardMedia, CardContent, Typography } from '@mui/material';
+import LlamaImageList from './LlamaImageList/LlamaImageList';
 import Masonry from '@mui/lab/Masonry';
 
 import cartagena from './resources/masonryImages/cartagena.jpg';
@@ -23,8 +24,12 @@ function App() {
       </Stack>
 
       <div style={{marginTop: '16px', marginBottom: '16px', height: '1px'}}></div>
+
+      <LlamaImageList></LlamaImageList>
+
+      <h1>Another way to show photos</h1>
       
-      <Masonry columns={{ xs: 1, sm: 2, md: 3, lg: 3 }} spacing={2}>
+      <Masonry columns={{ xs: 1, sm: 2, md: 3, lg: 3 }} spacing={1}>
         <Card>
           <CardMedia
             component="img"
