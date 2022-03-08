@@ -1,15 +1,8 @@
 import logo from './resources/red-logo_500.png';
 import './App.css';
-import { Stack, Card, CardMedia, CardContent, Typography } from '@mui/material';
+import { Stack } from '@mui/material';
 import LlamaImageList from './LlamaImageList/LlamaImageList';
-import Masonry from '@mui/lab/Masonry';
-
-import cartagena from './resources/masonryImages/cartagena.jpg';
-import zoomMeetingColor from './resources/masonryImages/zoom-meeting-color.jpg';
-import plazaBolivar from './resources/masonryImages/plaza-bolivar-bogota.jpg';
-import trajineraMexico from './resources/masonryImages/trajinera-mexico.jpg';
-import zoomMeeting from './resources/masonryImages/zoom-meeting.jpg';
-import llama from './resources/masonryImages/llama.jpg';
+import LlamaMasonry from './LlamaMasonry/LlamaMasonry';
 
 function App() {
   return (
@@ -28,75 +21,7 @@ function App() {
       <LlamaImageList></LlamaImageList>
 
       <h1>Another way to show photos</h1>
-      
-      <Masonry columns={{ xs: 1, sm: 2, md: 3, lg: 3 }} spacing={1}>
-        <Card>
-          <CardMedia
-            component="img"
-            image={cartagena}
-          />
-          <CardContent>
-            <Typography>
-              Cartagena
-            </Typography>
-          </CardContent>
-        </Card>
-        <Card>
-          <CardMedia
-            component="img"
-            image={llama}
-          />
-          <CardContent>
-            <Typography>
-              Llama
-            </Typography>
-          </CardContent>
-        </Card>
-        <Card>
-          <CardMedia
-            component="img"
-            image={plazaBolivar}
-          />
-          <CardContent>
-            <Typography>
-              Plaza Bolivar, Bogota
-            </Typography>
-          </CardContent>
-        </Card>
-        <Card>
-          <CardMedia
-            component="img"
-            image={trajineraMexico}
-          />
-          <CardContent>
-            <Typography>
-              Mexican Trajinera
-            </Typography>
-          </CardContent>
-        </Card>
-        <Card>
-          <CardMedia
-            component="img"
-            image={zoomMeeting}
-          />
-          <CardContent>
-            <Typography>
-              Zoom Meeting [fecha]
-            </Typography>
-          </CardContent>
-        </Card>
-        <Card>
-          <CardMedia
-            component="img"
-            image={zoomMeetingColor}
-          />
-          <CardContent>
-            <Typography>
-              Zoom Meeting [fecha]
-            </Typography>
-          </CardContent>
-        </Card>
-      </Masonry>
+      <LlamaMasonry></LlamaMasonry>
     </>
   );
 }

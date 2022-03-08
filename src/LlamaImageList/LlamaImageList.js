@@ -4,12 +4,17 @@ import ImageListItemBar from '@mui/material/ImageListItemBar';
 import IconButton from '@mui/material/IconButton';
 import InfoIcon from '@mui/icons-material/Info';
 import images from './images.js';
+import { useTheme } from '@mui/material/styles';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 export default function LlamaImageList() {
+  const theme = useTheme();
+  const isLessSm = useMediaQuery(theme.breakpoints.down('sm'));
+
   return (
     <ImageList
       variant="quilted"
-      cols={4}
+      cols={isLessSm ? 2 : 4}
     >
       {images.map((item) => (
         <ImageListItem key={item.img} cols={item.cols || 1} rows={item.rows || 1}>

@@ -1,35 +1,43 @@
+import viajeColombia from '../resources/images/viaje-colombia.jpg';
+import zoomMeetingColor from '../resources/images/zoom-meeting-color.jpg';
+import zoomMeeting from '../resources/images/zoom-meeting.jpg';
+import viajePlaya from '../resources/images/viaje-playa.jpg';
+import trajineraMexico from '../resources/images/trajinera-mexico.jpg';
+import cartagena from '../resources/images/cartagena.jpg';
+import llama from '../resources/images/llama.jpg';
+
 const items = [
   {
-    img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
-    title: 'Breakfast',
-    rows: 2,
+    img: trajineraMexico,
+    title: 'Mexican trajinera',
+    cols: 2,
+    rows: 2
+  },
+  {
+    img: viajePlaya,
+    title: 'Viaje Playa'
+  },
+  {
+    img: zoomMeetingColor,
+    title: 'zoom meeting [fecha]',
+  },
+  {
+    img: viajeColombia,
+    title: 'Viaje a colombia ¿Dónde es?',
     cols: 2,
   },
   {
-    img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
-    title: 'Burger',
+    img: zoomMeeting,
+    title: 'zoom meeting [fecha]',
   },
   {
-    img: 'https://images.unsplash.com/photo-1522770179533-24471fcdba45',
-    title: 'Camera',
+    img: cartagena,
+    title: 'Cartagena',
+    cols: 2
   },
   {
-    img: 'https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c',
-    title: 'Coffee',
-    cols: 2,
-  },
-  {
-    img: 'https://images.unsplash.com/photo-1533827432537-70133748f5c8',
-    title: 'Hats',
-    cols: 2,
-  },
-  {
-    img: 'https://images.unsplash.com/photo-1516802273409-68526ee1bdd6',
+    img: llama,
     title: 'Basketball',
-  },
-  {
-    img: 'https://images.unsplash.com/photo-1518756131217-31eb79b20e8f',
-    title: 'Fern',
   },
 ];
 
