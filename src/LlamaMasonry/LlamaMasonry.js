@@ -14,7 +14,7 @@ export default function LlamaMasonry() {
             />
             <CardContent>
               <Typography>
-                {item.description}
+                {item.title}
               </Typography>
             </CardContent>
           </Card>
