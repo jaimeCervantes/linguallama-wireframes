@@ -22,9 +22,9 @@ export default function LlamaTourDates() {
 
       <Grid container spacing={{ xs: 2, md: 3 }}>
         {tours.map((item) => (
-          <Grid item xs={12} sm={6} key={item.title} sx={{ cursor: 'pointer' }}>
+          <Grid item xs={12} sm={6} key={item.title}>
             <Typography variant="h5" component="p" sx={{textAlign: 'center'}}>
-              <Button variant="outlined" size="large">{item.title}</Button>
+              <Button variant="outlined" size="large" sx={{ cursor: 'pointer' }}>{item.title}</Button>
             </Typography>
           </Grid>
         ))}
