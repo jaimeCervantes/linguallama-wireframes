@@ -25,7 +25,14 @@ function App() {
         <LlamaTourDates></LlamaTourDates>
       </main>
       <Divider sx={{ marginTop: '24px' }}></Divider>
-      <footer style={{ paddingTop: '16px', paddingBottom: '16px', textAlign: 'center', backgroundColor: "#110000" }}>
+      <footer
+        style={{
+          paddingTop: '16px',
+          paddingBottom: '16px',
+          textAlign: 'center',
+          backgroundColor: "#110000",
+          color: 'white'
+        }}>
          Copyright ©{new Date().getFullYear()} Lingua. All rights reserved
       </footer>
     </>
