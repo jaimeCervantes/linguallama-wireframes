@@ -27,7 +27,8 @@ const theme = createTheme({
     ].join(','),
     h2: {
       fontWeight: 700,
-      letterSpacing: '-4px'
+      letterSpacing: '-4px',
+      color: '#950101'
     }
   },
 });
