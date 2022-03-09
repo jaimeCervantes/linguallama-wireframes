@@ -31,13 +31,13 @@ const items = [
     title: 'zoom meeting [fecha]',
   },
   {
+    img: llama,
+    title: 'Basketball',
+  },
+  {
     img: cartagena,
     title: 'Cartagena',
     cols: 2
-  },
-  {
-    img: llama,
-    title: 'Basketball',
   },
 ];
 
