@@ -10,6 +10,7 @@ function App() {
       <header style={{ padding: '16px'}}>
         <Stack>
           <img src={logo} alt="Logo"
+            className="backInDown"
             style={{
               display: 'block',
               maxInlineSize: '100%',
@@ -18,7 +19,7 @@ function App() {
         </Stack>
       </header>
       
-      <main style={{ padding: '16px', paddingTop: 0 }}>
+      <main style={{ padding: '16px', paddingTop: 0 }} className="fadeIn">
         
         <LlamaImageList></LlamaImageList>
         
@@ -26,6 +27,7 @@ function App() {
       </main>
       <Divider sx={{ marginTop: '24px' }}></Divider>
       <footer
+        className="fadeIn"
         style={{
           paddingTop: '16px',
           paddingBottom: '16px',
