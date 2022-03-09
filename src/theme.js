@@ -16,6 +16,20 @@ const theme = createTheme({
       default: '#FAF7F4'
     }
   },
+  typography: {
+    fontFamily: [
+      '-apple-system',
+      'BlinkMacSystemFont',
+      '"Segoe UI"',
+      'Ubuntu',
+      '"Helvetica Neue"',
+      'Arial',
+    ].join(','),
+    h2: {
+      fontWeight: 700,
+      letterSpacing: '-4px'
+    }
+  },
 });
 
 export default theme;

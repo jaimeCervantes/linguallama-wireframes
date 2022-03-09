@@ -8,7 +8,15 @@ export default function LlamaTourDates() {
   return (
     <section>
       <header>
-        <Typography variant="h2" sx={{ marginTop: '32px', marginBottom: '32px', textAlign: 'center' }}>
+        <Typography 
+          variant="h2" 
+          sx={{
+            marginTop: '32px',
+            marginBottom: '32px',
+            textAlign: 'center',
+            fontWeight: 700
+          }}
+        >
           Tour Dates
           <Button
             sx={{ marginLeft: '16px', height: '50px'}}
@@ -29,7 +37,7 @@ export default function LlamaTourDates() {
               <Button
                 variant="outlined"
                 size="large"
-                sx={{ cursor: 'pointer' }}
+                sx={{ cursor: 'pointer', textTransform: 'capitalize' }}
               >
                 {item.title}
               </Button>

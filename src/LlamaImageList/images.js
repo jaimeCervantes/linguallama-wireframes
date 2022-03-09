@@ -19,7 +19,7 @@ const items = [
   },
   {
     img: zoomMeetingColor,
-    title: 'zoom meeting [fecha]',
+    title: 'Zoom meeting',
   },
   {
     img: trajineraMexico,
@@ -28,7 +28,7 @@ const items = [
   },
   {
     img: zoomMeeting,
-    title: 'zoom meeting [fecha]',
+    title: 'Escalones ¿Dónde?',
   },
   {
     img: plazaBolivar,
