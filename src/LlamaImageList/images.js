@@ -4,12 +4,12 @@ import zoomMeeting from '../resources/images/zoom-meeting.jpg';
 import viajePlaya from '../resources/images/viaje-playa.jpg';
 import trajineraMexico from '../resources/images/trajinera-mexico.jpg';
 import cartagena from '../resources/images/cartagena.jpg';
-import llama from '../resources/images/llama.jpg';
+import plazaBolivar from '../resources/images/plaza-bolivar-bogota.jpg';
 
 const items = [
   {
-    img: trajineraMexico,
-    title: 'Mexican trajinera',
+    img: viajeColombia,
+    title: 'Viaje a colombia ¿Dónde es?',
     cols: 2,
     rows: 2
   },
@@ -22,8 +22,8 @@ const items = [
     title: 'zoom meeting [fecha]',
   },
   {
-    img: viajeColombia,
-    title: 'Viaje a colombia ¿Dónde es?',
+    img: trajineraMexico,
+    title: 'Mexican trajinera',
     cols: 2,
   },
   {
@@ -31,8 +31,8 @@ const items = [
     title: 'zoom meeting [fecha]',
   },
   {
-    img: llama,
-    title: 'Basketball',
+    img: plazaBolivar,
+    title: 'Bolivar Plaza',
   },
   {
     img: cartagena,

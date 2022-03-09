@@ -1,5 +1,7 @@
 import { Typography, Grid, Button, Box } from "@mui/material";
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+import DoorSlidingIcon from '@mui/icons-material/DoorSliding';
+
 import tours from './tours';
 
 export default function LlamaTourDates() {
@@ -24,7 +26,13 @@ export default function LlamaTourDates() {
         {tours.map((item) => (
           <Grid item xs={12} sm={6} key={item.title}>
             <Typography variant="h5" component="p" sx={{textAlign: 'center'}}>
-              <Button variant="outlined" size="large" sx={{ cursor: 'pointer' }}>{item.title}</Button>
+              <Button
+                variant="outlined"
+                size="large"
+                sx={{ cursor: 'pointer' }}
+              >
+                {item.title}
+              </Button>
             </Typography>
           </Grid>
         ))}
@@ -35,6 +43,8 @@ export default function LlamaTourDates() {
           variant="contained"
           color="primary"
           size="large"
+          sx={{ height: '50px' }}
+          startIcon={<DoorSlidingIcon />}
         >
           Enter site
         </Button>
