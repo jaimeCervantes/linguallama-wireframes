@@ -18,7 +18,7 @@ function App() {
         </Stack>
       </header>
       
-      <main style={{ padding: '16px' }}>
+      <main style={{ padding: '16px', paddingTop: 0 }}>
         
         <LlamaImageList></LlamaImageList>
         
