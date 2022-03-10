@@ -1,14 +1,14 @@
 section {
   background-color: #950101;
-  padding-bottom: 32px;
-  padding-top: 16px;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
 }
 
 .header {
   text-align: center;
   font-weight: 700;
   color: white;
-  margin-bottom: 16px;
+  margin-bottom: 1.5rem;
 }
 
 .item {
@@ -16,10 +16,12 @@ section {
   opacity: 0;
   text-transform: capitalize;
   animation-fill-mode: forwards;
-  color: white
+  color: white;
+  letter-spacing: -1px;
 }
 
 .enterContainer {
+  margin-top: 2rem;
   text-align: center;
   opacity: 0;
   animation-fill-mode: forwards;

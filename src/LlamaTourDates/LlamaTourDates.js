@@ -14,7 +14,7 @@ export default function LlamaTourDates() {
         >
           Tour Dates
           <Button
-            sx={{ marginLeft: '1.5rem', height: '50px'}}
+            sx={{ marginLeft: '1.5rem', height: '60px'}}
             variant="contained"
             color="secondary"
             size="large"
@@ -26,14 +26,14 @@ export default function LlamaTourDates() {
       </header>
 
       <Grid container spacing={{ xs: 2, md: 3 }}>
-        {tours.map((item, index) => (
+        {tours.map((item) => (
           <Grid item xs={12} sm={6} key={item.title}>
             <Typography variant="h5" component="p" sx={{textAlign: 'center'}}>
               <Button
                 className={`${styles.item} fadeIn`}
                 variant="outlined"
                 size="large"
-                sx={{ textTransform: 'capitalize' }}
+                sx={{ fontSize: '1.4rem', textTransform: 'capitalize' }}
               >
                 {item.title}
               </Button>
@@ -47,7 +47,7 @@ export default function LlamaTourDates() {
           variant="contained"
           color="primary"
           size="large"
-          sx={{ height: '50px' }}
+          sx={{ height: '60px' }}
           startIcon={<DoorSlidingIcon />}
         >
           Enter site
