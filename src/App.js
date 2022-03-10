@@ -19,10 +19,9 @@ function App() {
           <LlamaImageList></LlamaImageList>
         </div>
 
-        <LlamaTourDates></LlamaTourDates>
+        
       </main>
-      
-      <Divider sx={{ marginTop: '24px' }}></Divider>
+      <LlamaTourDates></LlamaTourDates>
       
       <footer className="footer fadeIn">
          Copyright ©{new Date().getFullYear()} Lingua. All rights reserved
