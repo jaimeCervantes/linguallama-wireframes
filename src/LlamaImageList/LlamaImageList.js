@@ -7,6 +7,8 @@ import images from './images.js';
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 
+import styles from './LlamaImageList.module.css';
+
 export default function LlamaImageList() {
   const theme = useTheme();
   const isLessSm = useMediaQuery(theme.breakpoints.down('sm'));
@@ -17,10 +19,13 @@ export default function LlamaImageList() {
       cols={isLessSm ? 2 : 4}
     >
       {images.map((item) => (
-        <ImageListItem key={item.img} cols={item.cols || 1} rows={item.rows || 1}>
+        <ImageListItem key={item.img} cols={item.cols || 1} rows={item.rows || 1}
+          sx={{ overflow: 'hidden' }}
+        >
           <img
             {...srcset(item.img, 250, item.rows, item.cols)}
             alt={item.title}
+            className={styles.img}
             loading="lazy"
           />
             <ImageListItemBar

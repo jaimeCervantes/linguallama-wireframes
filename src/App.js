@@ -14,15 +14,19 @@ function App() {
             style={{
               display: 'block',
               maxInlineSize: '100%',
-              alignSelf: 'center'
+              alignSelf: 'center',
+              opacity: 0,
+              animationFillMode: 'forwards'
             }}/>
         </Stack>
       </header>
       
-      <main style={{ padding: '16px', paddingTop: 0 }} className="fadeIn">
+      <main style={{ padding: '16px', paddingTop: 0 }}>
         
-        <LlamaImageList></LlamaImageList>
-        
+        <div className="fadeIn">
+          <LlamaImageList></LlamaImageList>
+        </div>
+
         <LlamaTourDates></LlamaTourDates>
       </main>
       <Divider sx={{ marginTop: '24px' }}></Divider>

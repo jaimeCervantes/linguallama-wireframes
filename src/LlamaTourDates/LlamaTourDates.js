@@ -7,14 +7,14 @@ import tours from './tours';
 export default function LlamaTourDates() {
   return (
     <section>
-      <header>
+      <header className="fadeIn">
         <Typography 
           variant="h2" 
           sx={{
             marginTop: '32px',
             marginBottom: '32px',
             textAlign: 'center',
-            fontWeight: 700
+            fontWeight: 700,
           }}
         >
           Tour Dates
@@ -31,13 +31,19 @@ export default function LlamaTourDates() {
       </header>
 
       <Grid container spacing={{ xs: 2, md: 3 }}>
-        {tours.map((item) => (
+        {tours.map((item, index) => (
           <Grid item xs={12} sm={6} key={item.title}>
             <Typography variant="h5" component="p" sx={{textAlign: 'center'}}>
               <Button
+                className="fadeIn"
                 variant="outlined"
                 size="large"
-                sx={{ cursor: 'pointer', textTransform: 'capitalize' }}
+                sx={{
+                  cursor: 'pointer', 
+                  opacity: 0,
+                  textTransform: 'capitalize',
+                  animationFillMode: 'forwards'
+                }}
               >
                 {item.title}
               </Button>
@@ -46,7 +52,14 @@ export default function LlamaTourDates() {
         ))}
       </Grid>
       
-      <Box sx={{ textAlign: 'center', marginTop: '50px'}}>
+      <Box sx={{
+          textAlign: 'center',
+          marginTop: '50px',
+          opacity: 0,
+          animationFillMode: 'forwards'
+        }}
+        className="fadeIn"
+      >
         <Button
           variant="contained"
           color="primary"
