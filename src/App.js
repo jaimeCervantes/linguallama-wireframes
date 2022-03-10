@@ -21,7 +21,10 @@ function App() {
 
         
       </main>
-      <LlamaTourDates></LlamaTourDates>
+
+      <div className="fadeIn">
+        <LlamaTourDates></LlamaTourDates>
+      </div>
       
       <footer className="footer fadeIn">
          Copyright ©{new Date().getFullYear()} Lingua. All rights reserved
