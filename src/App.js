@@ -9,15 +9,7 @@ function App() {
     <>
       <header style={{ padding: '16px'}}>
         <Stack>
-          <img src={logo} alt="Logo"
-            className="backInDown"
-            style={{
-              display: 'block',
-              maxInlineSize: '100%',
-              alignSelf: 'center',
-              opacity: 0,
-              animationFillMode: 'forwards'
-            }}/>
+          <img src={logo} alt="Logo" className="logo backInDown"/>
         </Stack>
       </header>
       
@@ -29,16 +21,10 @@ function App() {
 
         <LlamaTourDates></LlamaTourDates>
       </main>
+      
       <Divider sx={{ marginTop: '24px' }}></Divider>
-      <footer
-        className="fadeIn"
-        style={{
-          paddingTop: '16px',
-          paddingBottom: '16px',
-          textAlign: 'center',
-          backgroundColor: "#110000",
-          color: 'white'
-        }}>
+      
+      <footer className="footer fadeIn">
          Copyright ©{new Date().getFullYear()} Lingua. All rights reserved
       </footer>
     </>

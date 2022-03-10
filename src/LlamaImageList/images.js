@@ -1,6 +1,6 @@
 import viajeColombia from '../resources/images/viaje-colombia.jpg';
-import zoomMeetingColor from '../resources/images/zoom-meeting-color.jpg';
 import zoomMeeting from '../resources/images/zoom-meeting.jpg';
+import medellinEscalones from '../resources/images/medellin-comuna-13.jpg';
 import viajePlaya from '../resources/images/viaje-playa.jpg';
 import trajineraMexico from '../resources/images/trajinera-mexico.jpg';
 import cartagena from '../resources/images/cartagena.jpg';
@@ -18,7 +18,7 @@ const items = [
     title: 'Viaje Playa'
   },
   {
-    img: zoomMeetingColor,
+    img: zoomMeeting,
     title: 'Zoom meeting',
   },
   {
@@ -27,8 +27,8 @@ const items = [
     cols: 2,
   },
   {
-    img: zoomMeeting,
-    title: 'Escalones ¿Dónde?',
+    img: medellinEscalones,
+    title: 'Medellin Comuna 13, Colombia',
   },
   {
     img: plazaBolivar,

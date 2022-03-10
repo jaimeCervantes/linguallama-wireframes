@@ -1,25 +1,20 @@
 import { Typography, Grid, Button, Box } from "@mui/material";
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import DoorSlidingIcon from '@mui/icons-material/DoorSliding';
+import styles from './LlamaTourDates.module.css';
 
 import tours from './tours';
 
 export default function LlamaTourDates() {
   return (
     <section>
-      <header className="fadeIn">
+      <header className={`${styles.header} fadeIn`}>
         <Typography 
-          variant="h2" 
-          sx={{
-            marginTop: '32px',
-            marginBottom: '32px',
-            textAlign: 'center',
-            fontWeight: 700,
-          }}
+          variant="h2"
         >
           Tour Dates
           <Button
-            sx={{ marginLeft: '16px', height: '50px'}}
+            sx={{ marginLeft: '1.5rem', height: '50px'}}
             variant="contained"
             color="secondary"
             size="large"
@@ -35,15 +30,10 @@ export default function LlamaTourDates() {
           <Grid item xs={12} sm={6} key={item.title}>
             <Typography variant="h5" component="p" sx={{textAlign: 'center'}}>
               <Button
-                className="fadeIn"
+                className={`${styles.item} fadeIn`}
                 variant="outlined"
                 size="large"
-                sx={{
-                  cursor: 'pointer', 
-                  opacity: 0,
-                  textTransform: 'capitalize',
-                  animationFillMode: 'forwards'
-                }}
+                sx={{ textTransform: 'capitalize' }}
               >
                 {item.title}
               </Button>
@@ -52,14 +42,7 @@ export default function LlamaTourDates() {
         ))}
       </Grid>
       
-      <Box sx={{
-          textAlign: 'center',
-          marginTop: '50px',
-          opacity: 0,
-          animationFillMode: 'forwards'
-        }}
-        className="fadeIn"
-      >
+      <Box className={`${styles.enterContainer} fadeIn`}>
         <Button
           variant="contained"
           color="primary"
