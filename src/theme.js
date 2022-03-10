@@ -28,7 +28,7 @@ const theme = createTheme({
     h2: {
       fontWeight: 700,
       letterSpacing: '-4px',
-      color: 'white' //'#950101'
+      color: '#ffffff'
     }
   },
 });
