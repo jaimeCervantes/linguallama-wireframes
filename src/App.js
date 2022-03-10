@@ -1,6 +1,6 @@
 import logo from './resources/red-logo_500.png';
 import './App.css';
-import { Stack, Divider } from '@mui/material';
+import { Stack } from '@mui/material';
 import LlamaImageList from './LlamaImageList/LlamaImageList';
 import LlamaTourDates from './LlamaTourDates/LlamaTourDates';
 
