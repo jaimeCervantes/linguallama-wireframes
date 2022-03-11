@@ -20,6 +20,10 @@ section {
   letter-spacing: -1px;
 }
 
+.item:hover {
+  transform: scale(110%);
+}
+
 .enterContainer {
   margin-top: 2rem;
   text-align: center;

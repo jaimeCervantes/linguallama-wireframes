@@ -33,7 +33,7 @@ export default function LlamaTourDates() {
                 className={`${styles.item} fadeIn`}
                 variant="outlined"
                 size="large"
-                sx={{ fontSize: '1.4rem', textTransform: 'capitalize' }}
+                sx={{ fontSize: '1.4rem', textTransform: 'capitalize', transitionDuration: '0.3s', transitionProperty: 'transform' }}
               >
                 {item.title}
               </Button>
